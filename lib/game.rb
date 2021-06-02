@@ -38,9 +38,7 @@ class Game
     end 
 
     def winner 
-        if won?
-            @board.cells[won?[0]]
-        end
+        @board.cells[won?[0]] if won?
     end 
     
     def turn
